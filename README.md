@@ -1,46 +1,130 @@
-# Getting Started with Create React App
+Certainly! Below is a sample `README.md` file that you can use as a starting point for your project. Feel free to customize it based on your project's specifics.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# User Management App
 
-## Available Scripts
+This React application provides a simple user management interface, allowing users to view a list of users, apply filters, and search for specific users.
 
-In the project directory, you can run:
+## Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Components](#components)
+- [Context](#context)
+- [Hooks](#hooks)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Display a list of users with details.
+- Apply gender filters to the user list.
+- Search for users by name, username, or email.
+- Load more users with a "Load More" button.
+- View detailed information for each user.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+src/
+|-- components/
+|   |-- SearchUser.tsx
+|   |-- UserCard.tsx
+|   |-- UserList.tsx
+|-- context/
+|   |-- ApiContext.tsx
+|-- hooks/
+|   |-- useApiCall.tsx
+|-- pages/
+|   |-- Home.tsx
+|   |-- UserDetail.tsx
+|-- types/
+|   |-- index.ts
+|-- App.tsx
+|-- index.tsx
+|-- theme.ts
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **components:** Reusable UI components.
+- **context:** API context and provider.
+- **hooks:** Custom hooks for API calls and other functionalities.
+- **pages:** React components representing different pages in the app.
+- **types:** TypeScript type definitions.
 
-### `npm run build`
+## Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/aliiqbal436/frontend-test.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+   ```bash
+   cd frontend-test
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Run the app:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Usage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Visit [http://localhost:3000](http://localhost:3000) to access the app.
+- Navigate through the user list, apply filters, and search for specific users.
 
-## Learn More
+## Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `SearchUser`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A component that provides a search bar to search for users. user api don't have any search option to i built search with downloaded users data.
+
+### `UserCard`
+
+A component representing a user card with basic details, used in the user list.
+
+### `UserList`
+
+A component that displays a list of users, utilizing the `UserCard` component.
+
+### `Home`
+
+The main page of the app displaying the user list, search bar, and filters.
+
+### `UserDetail`
+
+A page displaying detailed information about a specific user.
+
+## Context
+
+### `ApiContext`
+
+A React context that provides API-related functionalities to its children using the `useApi` hook.
+
+## Hooks
+
+### `useApiCall`
+
+A custom hook that handles API calls, pagination, filtering, and searching for users.
+
+## Dependencies
+
+- React
+- React Router
+- Material-UI
+- moment.js
+
+## Contributing
+
+Feel free to contribute to this project by opening issues or submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
