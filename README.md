@@ -58,13 +58,13 @@ src/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aliiqbal436/frontend-test.git
+   git clone https://github.com/aliiqbal436/kwanso-frontent-test.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd frontend-test
+   cd kwanso-frontent-test.git
    npm install
    ```
 
