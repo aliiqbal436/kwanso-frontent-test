@@ -2,20 +2,18 @@ version: 0.2
 
 phases:
   install:
-    runtime-version:
-      nodejs: 18
-
+    runtime-versions:
+      nodejs: 14
+  pre_build:
     commands:
+      - echo "Installing dependencies..."
       - npm install
-  
   build:
     commands:
+      - echo "Building React app..."
       - npm run build
 
 artifacts:
-  files:
-    - public/**/*
-    - src/**/*
-    - package.json
-    - appspec.yml
-    - scripts/**/*
+  files: '**/*'
+  discard-paths: yes
+  base-directory: build
