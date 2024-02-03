@@ -27,7 +27,7 @@ function Home() {
       style={{ alignContent: "center", justifyContent: "center" }}
       maxWidth="sm"
     >
-      <h1>Users list</h1>
+      <h1>Users list s</h1>
       <SearchUser handleSearchUser={handleSearchUser}/>
       <FormControl sx={{ m: 2, minWidth: 300 }} size="small">
         <InputLabel id="demo-select-small-label">Filter by Gender</InputLabel>
