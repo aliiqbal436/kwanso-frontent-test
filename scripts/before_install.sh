@@ -15,5 +15,3 @@ sudo systemctl enable nginx
 sudo systemctl start nginx
 
 # Allow HTTP traffic in the firewall
-sudo firewall-cmd --permanent --add-service=http
-sudo firewall-cmd --reload
