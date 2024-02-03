@@ -4,9 +4,9 @@
 cd /app
 
 # install node and npm
-apt-get install curl
+yum -y install curl
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-apt-get install nodejs -y
-apt-get install npm -y
-apt install nginx -y
+yum -y install nodejs
+yum -y install npm
+yum -y install nginx
 ufw allow 'Nginx HTTP'
