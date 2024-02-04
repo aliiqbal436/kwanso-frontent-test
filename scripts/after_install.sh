@@ -6,5 +6,5 @@ cd /app
 # install dependencies
 sudo npm install
 sudo npm run build
-cp -r build/* /var/www/html
+cp -rf build/* /var/www/html
 npm install pm2 -g
