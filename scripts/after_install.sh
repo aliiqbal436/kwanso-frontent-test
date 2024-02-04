@@ -1,9 +1,10 @@
 #!/bin/bash
 
-set -e
+# navigate to app folder
+cd /app
 
-# Deploy the React app to the target directory
-sudo cp -R * /var/www/html/react-app/
-
-# Start the Nginx service
-sudo service nginx start
+# install dependencies
+npm install
+npm run build
+cp -r build/* /var/www/html
+npm install pm2 -g
